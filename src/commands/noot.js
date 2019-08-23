@@ -7,7 +7,7 @@ async function noot(msg, client){
     var connection = await client.voice.joinChannel(voice_channel).catch((err)=>{
         console.log('Unable to send noot: '+err);
     });
-    connection.playFile("mp3\\nootnoot.mp3").on('end', ()=>{
+    connection.playFile("mp3/nootnoot.mp3").on('end', ()=>{
         process.env.NOOTS = 1 + parseInt(process.env.NOOTS);
         client.user.setActivity(process.env.NOOTS+" noots so far!");
         connection.disconnect();
