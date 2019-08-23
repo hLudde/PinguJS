@@ -1,5 +1,5 @@
-const pingu = require(".\\commands\\pingu.js");
-const noot = require(".\\commands\\noot.js");
+const pingu = require("./commands/pingu.js");
+const noot = require("./commands/noot.js");
 
 async function command(msg, args, client){
     console.log(args[0]);
