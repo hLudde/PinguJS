@@ -15,7 +15,7 @@ async function command(msg, args, client){
             await ping.pong(msg);
             break;
         case "nootnoot":
-            await noot,nootnoot(msg, client);
+            await noot.nootnoot(msg, client);
             break;
     }
 }
